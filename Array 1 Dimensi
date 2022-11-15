@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{   //deklarasi array 1 dimensi
+
+    int i,j;
+    int nilai[10];
+
+    //mendeklarasikan variabel untuk indeks perulangan
+
+    cout << "Berapa jumlah elemen yang ingin diisi? ";
+    cin >>j;
+
+    //mengisi nilai array dalam elemen array yang diinginkan
+
+    for (i=0;i<j;i++){
+        cout << "Masukkan nilai ke-"<<i+1<<" = ";
+        cin >>nilai[i];
+    }
+    //menampilkan hasil
+    cout << "\nCetak Output" << endl;
+    for (i=0;i<j;i++){
+        cout << "Nilai ke-"<<i+1<<" = " <<nilai[i]<<endl;
+    }
+    return 0;
+}
